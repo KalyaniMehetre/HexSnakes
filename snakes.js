@@ -109,6 +109,12 @@ function myfunction()
 			playstate = "play";
 			myinterval =setInterval(intervalfunc,200);
 		}
+		
+		else if((e.keyCode == 32)&&(playstate=="gameover"))
+		{
+			playstate = "play";
+			location.reload();
+		}
 	})
 	
 	function drawhexboard(ctx)
